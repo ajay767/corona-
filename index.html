@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2|Lexend+Giga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+
+
+    <title>Corona web app</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <ion-icon name="logo-apple-appstore"></ion-icon>
+            </div>
+            <div class="com-name">
+                <h2>Erax 2.0</h2>
+            </div>
+            <div class="menu-bar-btn">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="menu-bar-option">
+                <ul class="menu-bar-list">
+                    <li><input class="search-box" type="search" name="" id="" placeholder=" &#128440; Search"></li>
+                    <li class="link1"><a href="#">
+                            <ion-icon class="menu-bar-icon" name="home-outline"></ion-icon> Home
+                        </a> </li>
+                    <li class="link1"><a href="#medical">
+                            <ion-icon class="menu-bar-icon" name="medkit-outline"></ion-icon> Medical Advisory
+                        </a> </li>
+                    <li class="link2"><a href="#">
+                            <ion-icon class="menu-bar-icon" name="megaphone-outline"></ion-icon> News
+                        </a> </li>
+                    <li class="link3"><a href="#">
+                            <ion-icon class="menu-bar-icon" name="analytics-outline"></ion-icon> Tracker
+                        </a> </li>
+                    <li class="link4"><a href="#">
+                            <ion-icon class="menu-bar-icon" name="enter-outline"></ion-icon> Log-in
+                        </a> </li>
+                    <li class="link5"><a href="#">
+                            <ion-icon class="menu-bar-icon" name="rainy-outline"></ion-icon> Sign-up
+                        </a> </li>
+                    <li class="link6"><a href="#footer">
+                            <ion-icon class="menu-bar-icon" name="person-circle-outline"></ion-icon> About
+                        </a> </li>
+                    <li>
+                        <h4 style="color: white; font-size: 20px; display: inline;"> By Ajay yadav </h4>
+                        <ion-icon class="menu-bar-icon" name="heart-circle-outline"></ion-icon>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="card-head">
+        <h2>MAIN DASHBOARD</h2>
+        <h3> %date%-%month%-%year%</h3>
+        <img src="./media/graph.svg" alt="">
+        <h5>Updated since 6hr ago</h5>
+    </div>
+    <div class="card-box">
+
+        <div class="card-1">
+            <h3>
+                <i class="fas fa-dna"></i> TOTAL CASE
+            </h3>
+            <P class="card-para">18,985</P>
+        </div>
+        <div class="card-2">
+            <h3><i class="fab fa-gripfire"></i>TOTAL DEATH</h3>
+            <P class="card-para">603</P>
+        </div>
+        <div class="card-3">
+            <h3><i class="fas fa-heartbeat"></i> Recovered</h3>
+            <p class="card-para">3260</p>
+        </div>
+
+
+        <div class="card-4">
+            <h3><i class="fas fa-skull-crossbones"></i> Case Rate</h3>
+            <p class="card-para">NIL</p>
+        </div>
+
+    </div>
+    <div class="info-box">
+        <h3><span style="color: black;"># </span> <span style="color:#0089ff;">STAY</span> HOME</h3>
+        <p>Phir jeet jyega INDIA</p>
+        <img src="./media/home.svg" alt="">
+    </div>
+    <div class="medical" id="medical">
+        <h3>Precautions</h3>
+        <ul>
+            <li>Avoid close contact with people who are sick. Maintain at least three feet distance between yourself
+                and anyone who is coughing or sneezing.</li>
+            <li>Avoid touching your eyes, nose, and mouth.</li>
+            <li>Stay home when you are sick.</li>
+            <li>Cover your cough or sneeze with a tissue, then dispose of the tissue safely.</li>
+            <li>Clean and disinfect frequently-touched objects and surfaces using a regular household cleaning spray
+                or wipe.</li>
+            <li> Wearing a mask is not necessary unless you are taking care of an infected person. The Centers for
+                Disease Control (CDC) does recommend that only infected people wear masks to prevent the spread of
+                the virus.</li>
+            <li>Wash your hands often with soap and water for at least 20 seconds, especially after going to the
+                bathroom, before eating, and after blowing your nose, coughing, or sneezing.</li>
+            <li>If soap and water are not readily available, use an alcohol-based hand sanitiser with at least 60%
+                alcohol. Always wash hands with soap and water when hands are visibly dirty.</li>
+            <li>If you have a fever, cough and difficulty breathing, seek medical attention immediately.</li>
+            <li>Keep in mind the travel advisory set out by the Ministry of Health and Welfare.</li>
+        </ul>
+    </div>
+    <div class="footer" id="footer">
+        <div class="social-link">
+            <ion-icon class="foot-logo" name="logo-facebook"></ion-icon>
+            <ion-icon class="foot-logo" name="logo-tumblr"></ion-icon>
+            <ion-icon class="foot-logo" name="logo-snapchat"></ion-icon>
+        </div>
+        <p>&copy 2020 Ajay yadav </p>
+
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

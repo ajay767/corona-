@@ -1,0 +1,322 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width:740px) {
+
+
+    /* header{
+    border: 2px solid red;
+} */
+    nav {
+        background-color: #1e2022;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-block: hidden;
+    }
+
+    .logo {
+        margin: 5px;
+        height: 50px;
+        width: 50px;
+    }
+
+    ion-icon {
+        color: white;
+        font-size: 45px;
+    }
+
+    .com-name {
+        margin-left: 5px;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+
+    .com-name h2 {
+        font-family: 'Lexend Giga', sans-serif;
+        font-size: 24px;
+    }
+
+    .menu-bar-btn {
+        margin-left: auto;
+        height: 40px;
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        height: 6px;
+        width: 35px;
+        background-color: white;
+        border-radius: 9px;
+        margin: 3px;
+        transition: all 0.5s ease;
+    }
+
+    .menu-bar-btn.press {
+        transform: rotate(360deg);
+    }
+
+    .bar1.press {
+        transform: rotate(45deg) translate(6px, 9px);
+    }
+
+    .bar2.press {
+        transform: translate(-50%);
+        opacity: 0;
+    }
+
+    .bar3.press {
+        transform: rotate(-45deg) translate(7px, -11px);
+    }
+
+    .menu-bar-option {
+        position: absolute;
+        top: 59px;
+        background-color: #1e2022;
+        height: 100vh;
+        width: 0px;
+        overflow-x: hidden;
+        transition: all 0.5s ease-in;
+    }
+
+    .menu-bar-option.active {
+        width: 65%;
+    }
+
+    .menu-bar-list {
+        transition: all 0.5s ease;
+
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-bar-list.active {
+        visibility: visible;
+    }
+
+
+
+    .menu-bar-list li {
+        margin: 10px;
+        margin-top: 25px;
+        margin-left: 15px;
+        list-style: none;
+    }
+
+    li h4 {
+        padding-top: 5px;
+    }
+
+    .menu-bar-list li a {
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+    }
+
+    .search-box {
+        font-size: 20px;
+        width: 100%;
+        height: 40px;
+        border: none;
+        border: 2px solid rgb(233, 233, 240);
+        background-color: rgb(46, 43, 43);
+        color: white;
+        padding-left: 8px;
+        border-radius: 9px;
+    }
+
+    .menu-bar-icon {
+        font-size: 22px;
+    }
+
+    .link1,
+    .link2,
+    .link3,
+    .link4,
+    .link5,
+    .link6 {
+        opacity: 0;
+    }
+
+    .link1 {
+        transition: all 0.5s ease 0.2;
+    }
+
+    .link2 {
+        transition: all 0.5s ease 0.4;
+    }
+
+    .link3 {
+        transition: all 0.5s ease 0.6;
+    }
+
+    .link4 {
+        transition: all 0.5s ease 0.8;
+    }
+
+    .link5 {
+        transition: all 0.5s ease 1.0;
+    }
+
+    .link6 {
+        transition: all 0.5s ease 1.2;
+    }
+
+    .menu-bar-list li.fade {
+        opacity: 1;
+    }
+
+    /* nav menu styling End point */
+    /* -------------------------------------------------------- */
+
+    .card-box {
+        width: 100%;
+        height: 250px;
+        background-color: rgb(211, 204, 208);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card-head {
+        background-color: rgb(211, 204, 208);
+        text-align: left;
+        padding: 15px;
+
+    }
+
+    .card-head img {
+        width: 100%;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4,
+    .card-5 {
+        width: 166px;
+        height: 85px;
+        background-color: rgb(248, 44, 44);
+        color: white;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 9px;
+    }
+
+    .card-para {
+        font-size: 25px;
+        padding: 5px;
+    }
+
+    .card-2 {
+        background-color: green;
+    }
+
+    .card-3 {
+        background-color: #0054ff;
+    }
+
+    .card-4 {
+        background-color: #673ab7;
+    }
+
+    .info-box {
+        padding: 15px;
+        text-align: center;
+        background-color: rgb(211, 204, 208);
+    }
+
+    .info-box h3 {
+        font-size: 25px;
+        color: green;
+    }
+
+    .info-box p {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .info-box img {
+        margin: 16px;
+        width: 95%;
+    }
+
+    .card-icon {
+        font-size: 16px;
+    }
+
+
+
+    .medical {
+        background-color: rgb(211, 204, 208);
+
+    }
+
+    .medical h3 {
+        text-transform: uppercase;
+        color: #005aff;
+        text-align: center;
+        font-size: 27px;
+    }
+
+    .medical ul li {
+        list-style: inside;
+        text-align: justify;
+        font-size: 19px;
+        margin: 15px 28px;
+        font-weight: 500;
+    }
+
+.medical ul li:nth-child(10){
+    margin: 0px 28px;
+}
+
+
+
+
+
+
+    .footer {
+        background-color: #1e2022;
+text-align: center;
+    }
+
+    .social-link {
+        display: flex;
+        justify-content: center;
+        width: 40%;
+        display: flex;
+        margin: auto;
+        text-align: center;
+    }
+.footer p{
+    font-size: 19px;
+    color: aliceblue;
+    padding-bottom: 15px;
+}
+    .foot-logo {
+        font-size: 30px;
+        margin: 15px;
+        color: rgb(197, 195, 195);
+    }
+
+
+
+}
