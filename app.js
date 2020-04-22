@@ -14,27 +14,37 @@ var Controller = (function () {
     });
 })();
 
-
-var UIcontroller = (function () {
-  
-    var date = new date();
-    date.getDate();
+var tracker = (function () {
 
 
-});
-var date, hmtl , newHtml;
- date=new Date();
-        
+    fetch("https://api.covid19india.org/data.json")
+        .then(Response => Response.json())
+        .then(data => {
+            var todayData = data.cases_time_series;
+            var todayDataUpdate = todayData[todayData.length - 1];
 
- html = '<h3>%date%-%month%-%year%</h3>';
-newHtml = html.replace('%date%', date.getDate() );
-newHtml = newHtml.replace('%month%', parseInt(date.getMonth()+1) );
-newHtml = newHtml.replace('%year%', date.getFullYear() );
+            document.querySelector('.card-1 p').innerHTML = parseInt(todayDataUpdate.totalconfirmed);
+            document.querySelector('.card-2 p').innerHTML = parseInt(todayDataUpdate.totaldeceased);
+            document.querySelector('.card-3 p').innerHTML = parseInt(todayDataUpdate.totalrecovered);
+            document.querySelector('.card-head p').innerHTML = ('As per ' + todayDataUpdate.date + '2020 update given by Govt of India.');
+            document.querySelector('.card-4 p').innerHTML = parseInt(todayDataUpdate.dailyconfirmed);
+            // console.log(todayDataUpdate.totalconfirmed);
+            console.log(data);
 
-document.querySelector('.card-head h3').innerHTML= newHtml;
+            var statedata = data.statewise;
+            console.log(statedata);
+           
+            for (var i = 1; i < statedata.length; i++) {
+                var current = statedata[i];
+                document.querySelector('.' + current.statecode + ' h2').innerHTML = current.state;
+                document.querySelector('.' + current.statecode + ' p .TC').innerHTML = current.confirmed;
+                document.querySelector('.' + current.statecode + ' p .TD').innerHTML = current.deaths;
+                document.querySelector('.' + current.statecode + ' p .RC').innerHTML = current.recovered;
+
+            }
 
 
 
 
-
-
+        });
+})();
