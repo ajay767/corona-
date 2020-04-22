@@ -6,7 +6,8 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif
+    font-family: sans-serif;
+    overflow-x: hidden;
 }
 
 @media screen and (max-width:740px) {
@@ -186,15 +187,19 @@ html {
 
     .card-head {
         background-color: #fff;
-        text-align: left;
-        padding: 15px
+        text-align: center;
+        padding: 15px;
+        height:424px
     }
 
     .card-head img {
-        width: 100%
+        width: 86%;
+        margin: 10px auto;
     }
 
     .card-head h2 {
+        margin: 25px auto;
+        text-align: left;
         color: #ff0000cc
     }
 
@@ -212,6 +217,17 @@ html {
         border-radius: 9px
     }
 
+
+
+
+
+
+
+
+
+
+
+
     .fa-arrow-up {
         color: #2d0101;
     }
@@ -221,10 +237,14 @@ html {
         font-size: 25px;
         padding: 5px
     }
-.card-1 span , .card-2 span , .card-3 span{
-    color: #010002;
-    font-weight: 600;
-}
+
+    .card-1 span,
+    .card-2 span,
+    .card-3 span {
+        color: #010002;
+        font-weight: 600;
+    }
+
     .card-2 {
         background-color: #008000c7
     }
@@ -407,7 +427,6 @@ nav {
 }
 
 .card-head h2 {
-    margin: 10px auto;
     color: #fe0739;
 }
 
