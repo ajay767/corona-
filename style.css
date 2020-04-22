@@ -204,7 +204,7 @@ html {
     .card-4,
     .card-5 {
         width: 166px;
-        height: 85px;
+        height: 93px;
         background-color: #fb3131;
         color: white;
         margin: 10px;
@@ -212,12 +212,19 @@ html {
         border-radius: 9px
     }
 
+    .fa-arrow-up {
+        color: #2d0101;
+    }
+
     .card-para {
         font-weight: 500;
         font-size: 25px;
         padding: 5px
     }
-
+.card-1 span , .card-2 span , .card-3 span{
+    color: #010002;
+    font-weight: 600;
+}
     .card-2 {
         background-color: #008000c7
     }
@@ -301,18 +308,18 @@ html {
         width: 95%
     }
 
-.move-btn{
-    margin: 5px 36%;
-    font-size: 21px;
-    font-weight: 600;
-    text-align: center;
-    width: 100px;
-    border: none;
-    height: 43px;
-    border-radius: 9px;
-    color: #bdbdbd;
-    background-color: #944302;
-}
+    .move-btn {
+        margin: 5px 36%;
+        font-size: 21px;
+        font-weight: 600;
+        text-align: center;
+        width: 100px;
+        border: none;
+        height: 43px;
+        border-radius: 9px;
+        color: #bdbdbd;
+        background-color: #944302;
+    }
 
     .footer {
         background-color: #1e2022;
@@ -349,8 +356,8 @@ html {
     .state-style {
         margin: 15px auto;
         padding: 15px;
-        width: 95%;
-        height: 175px;
+        width: 85%;
+        height: 148px;
         background-color: #f0a500;
         border-radius: 9px;
         color: #222831;
@@ -359,7 +366,10 @@ html {
     }
 
     .state-style h2 {
-        border-bottom: 2px solid black;
+        letter-spacing: 2px;
+        color: #0470f5;
+        font-size: 22px;
+        border-bottom: 2px solid #bbbbbb;
         text-align: center;
         margin-bottom: 5px;
         text-transform: uppercase
@@ -367,77 +377,93 @@ html {
 
     .state-wise p {
         padding-top: 5px;
-        font-size: 22px
+        font-size: 19px
     }
 }
 
 
 
-nav{
-   background-color: #0e0e1d;
+nav {
+    background-color: #0e0e1d;
 }
-.logo ion-icon{
+
+.logo ion-icon {
     color: #bdbdbd;
 }
-.com-name{
+
+.com-name {
     color: #466ada;
 }
-.bar1 , .bar2 , .bar3{
+
+.bar1,
+.bar2,
+.bar3 {
     background-color: #bdbdbd;
 }
-.card-head{
+
+.card-head {
     background-color: #161625;
     color: #bdbdbd;
 }
-.card-head h2{
+
+.card-head h2 {
     margin: 10px auto;
     color: #fe0739;
 }
-.card-2{
+
+.card-2 {
     background-color: #289645;
 }
-.medical{
+
+.medical {
     padding-top: 15px;
     background-color: #161625;
     color: #bdbdbd;
 }
-.state-style{
+
+.state-style {
     background-color: #1e1e30;
     color: #f8bc08;
     box-shadow: none;
 }
-.state-wise{
+
+.state-wise {
     padding-bottom: 15px;
 
     background-color: #161625;
 }
-.info-box{
+
+.info-box {
     background-color: #161625;
 }
-.info-box p{
+
+.info-box p {
     color: #bdbdbd;
 }
-.card-box{
+
+.card-box {
     background-color: #161625;
 }
-.state-wise-head h3{
+
+.state-wise-head h3 {
     padding: 15px;
     background-color: #161625;
-    color: #bdbdbd;
+    color: #57677b;
 }
-.footer{
+
+.footer {
     background-color: #0e0e1d;
 }
-.menu-bar-option{
+
+.menu-bar-option {
     background-color: #161625;
 }
-.state-style:nth-child(1)
-{
+
+.state-style:nth-child(1) {
     margin: 0px auto 15px;
 }
 
-.state-style:nth-last-child(1)
-{
+.state-style:nth-last-child(1) {
     margin: 15px auto 0px;
 }
 
