@@ -23,16 +23,19 @@ var tracker = (function () {
             var todayData = data.cases_time_series;
             var todayDataUpdate = todayData[todayData.length - 1];
 
-            document.querySelector('.card-1 p').innerHTML = parseInt(todayDataUpdate.totalconfirmed);
-            document.querySelector('.card-2 p').innerHTML = parseInt(todayDataUpdate.totaldeceased);
-            document.querySelector('.card-3 p').innerHTML = parseInt(todayDataUpdate.totalrecovered);
-            document.querySelector('.card-head p').innerHTML = ('As per ' + todayDataUpdate.date + '2020 update given by Govt of India.');
-            document.querySelector('.card-4 p').innerHTML = parseInt(todayDataUpdate.dailyconfirmed);
-            // console.log(todayDataUpdate.totalconfirmed);
-            console.log(data);
-
             var statedata = data.statewise;
             console.log(statedata);
+
+
+            document.querySelector('.card-1 p').innerHTML = parseInt(statedata[0].confirmed);
+            document.querySelector('.card-2 p').innerHTML = parseInt(statedata[0].deaths);
+            document.querySelector('.card-3 p').innerHTML = parseInt(statedata[0].recovered);
+            document.querySelector('.card-head p').innerHTML = ('As per ' + statedata[0].lastupdatedtime + ' update given by Govt of India.');
+            document.querySelector('.card-4 p').innerHTML = parseInt(todayDataUpdate.dailyconfirmed);
+            document.querySelector('.card-5 p').innerHTML = parseInt(statedata[0].active);
+
+
+            
            
             for (var i = 1; i < statedata.length; i++) {
                 var current = statedata[i];
