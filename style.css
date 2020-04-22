@@ -190,6 +190,8 @@ html {
         width: 100%;
         height: 250px;
         background-color: rgb(211, 204, 208);
+        background-color: rgb(247, 243, 245);
+
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -197,6 +199,8 @@ html {
 
     .card-head {
         background-color: rgb(211, 204, 208);
+        background-color: rgb(247, 243, 245);
+
         text-align: left;
         padding: 15px;
 
@@ -213,7 +217,7 @@ html {
     .card-5 {
         width: 166px;
         height: 85px;
-        background-color: rgb(248, 44, 44);
+        background-color: #fb3131;
         color: white;
         margin: 10px;
         padding: 10px;
@@ -226,7 +230,7 @@ html {
     }
 
     .card-2 {
-        background-color: green;
+        background-color: #008000c7;
     }
 
     .card-3 {
@@ -241,6 +245,8 @@ html {
         padding: 15px;
         text-align: center;
         background-color: rgb(211, 204, 208);
+        background-color: rgb(247, 243, 245);
+
     }
 
     .info-box h3 {
@@ -266,6 +272,7 @@ html {
 
     .medical {
         background-color: rgb(211, 204, 208);
+        background-color: rgb(247, 243, 245);
 
     }
 
@@ -316,6 +323,50 @@ text-align: center;
         margin: 15px;
         color: rgb(197, 195, 195);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.state-wise-head{
+    width: 100%;
+font-size: 25px;
+text-align: center;
+}
+
+.state-style{
+    margin: 15px auto;
+    padding: 15px;
+    width: 95%;
+    height: 175px;
+    background-color: #a6b1e1;
+    border-radius: 9px;
+}
+.state-style h2{
+    text-transform: uppercase;
+}
+.state-wise p{
+    padding-top: 5px;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
