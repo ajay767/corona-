@@ -10,7 +10,6 @@ html {
     overflow-x: hidden;
 }
 
-@media screen and (max-width:740px) {
     nav {
         background-color: #1e2022;
         display: flex;
@@ -224,15 +223,12 @@ background-color: #161625;
     margin: 5px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (min-width:768px)
+{
+    .middle{
+        height: 100vh;
+    }
+    .info{
+        width: 67%;
+    }
 }
