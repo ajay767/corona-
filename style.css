@@ -189,7 +189,8 @@ html {
         background-color: #fff;
         text-align: center;
         padding: 15px;
-        height:424px
+        height:480px;
+        overflow: hidden;
     }
 
     .card-head img {
@@ -208,6 +209,7 @@ html {
     .card-3,
     .card-4,
     .card-5 {
+        overflow: hidden;
         width: 166px;
         height: 93px;
         background-color: #fb3131;
@@ -217,7 +219,7 @@ html {
         border-radius: 9px
     }
 
-
+   
 
 
 
@@ -338,7 +340,7 @@ html {
         height: 43px;
         border-radius: 9px;
         color: #bdbdbd;
-        background-color: #944302;
+        background-color: #d66002;
     }
 
     .footer {
