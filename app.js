@@ -51,6 +51,21 @@ var tracker = (function () {
 
 document.querySelector('.theme-mode').addEventListener('click', () => {
     document.querySelector('.theme-mode').classList.toggle('test');
-document.querySelector('.theme').classList.toggle('test');
+    document.querySelector('.theme').classList.toggle('test');
 
 });
+
+
+var themeConvertor = (function () {
+
+    document.querySelector('.theme-mode').addEventListener('click', () => {
+
+
+        if (document.querySelector('#theme').href.includes('light')) {
+            document.querySelector('#theme').href = './dark-mode.css';
+
+        } else {
+            document.querySelector('#theme').href = './light-mode.css';
+        }
+    });
+})();
