@@ -20,6 +20,7 @@ nav {
     overflow-block: hidden
 }
 
+
 .logo {
     margin: 5px;
     height: 50px;
@@ -78,7 +79,7 @@ ion-icon {
 }
 
 .bar3.press {
-    transform: rotate(-45deg) translate(7px, -11px)
+    transform: rotate(-45deg) translate(7px, -11px);
 }
 
 .menu-bar-option {
@@ -88,18 +89,20 @@ ion-icon {
     height: 100vh;
     width: 0;
     overflow-x: hidden;
-    transition: all .5s ease-in
+    transition: all .5s ease-in;
+    z-index: 4;
 }
 
 .menu-bar-option.active {
-    width: 65%
+    width: 65%;
+    
 }
 
 .menu-bar-list {
     transition: all .5s ease;
     visibility: hidden;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
 
 .menu-bar-list.active {
@@ -197,11 +200,47 @@ li h4 {
 }
 
 .card-head {
+    position: relative;
     background-color: #fff;
     text-align: center;
     padding: 15px;
     height: 480px;
     overflow: hidden;
+}
+.top-box{
+    display: flex;
+}
+
+.theme{
+    width: 65px;
+    height: 32px;
+    margin-left: 10px;
+    border-radius: 50px;
+    background-color: #f14804;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid white;
+    transition: all 0.3s ease-in;
+
+}
+.theme-mode{
+    height:28px;
+    width: 28px;
+    border: none;
+    border-radius: 50px;
+    background-color: yellow;
+    display: block;
+    transition: all 0.3s ease-in;
+    outline: none;
+}
+
+.theme.test{
+    background-color: #181717;
+
+}
+.theme-mode.test{
+    margin-left: 32px;
+background-color: rgb(32, 162, 249);
 }
 
 .card-head img {
@@ -210,7 +249,7 @@ li h4 {
 }
 
 .card-head h2 {
-    margin: 25px auto;
+    margin: 0px auto 15px;
     text-align: left;
     color: #ff0000cc
 }
