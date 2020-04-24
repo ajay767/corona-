@@ -30,13 +30,13 @@ var tracker = (function () {
 
 
             var increasedCase = statedata[0].confirmed - pastDataUpdate.totalconfirmed;
-            document.querySelector('.card-1 span').innerHTML = increasedCase;
+            document.querySelector('.card-1 span').innerHTML = ('+'+increasedCase);
 
             var increasedDeath = statedata[0].deaths - pastDataUpdate.totaldeceased;
-            document.querySelector('.card-2 span').innerHTML = increasedDeath;
+            document.querySelector('.card-2 span').innerHTML =  ('+'+increasedDeath);
 
             var increasedRecovery= statedata[0].recovered - pastDataUpdate.totalrecovered;
-            document.querySelector('.card-3 span').innerHTML = increasedRecovery;
+            document.querySelector('.card-3 span').innerHTML =  ('+'+increasedRecovery);
 
 
 
