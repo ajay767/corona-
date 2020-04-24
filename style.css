@@ -131,8 +131,19 @@ li h4 {
     border: 2px solid #e9e9f0;
     background-color: #2e2b2b;
     color: white;
-    padding-left: 8px;
-    border-radius: 9px
+    padding-left: 17px;
+    padding-right: 10px;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.5s ease-in;
+}
+
+.search-box:focus {
+    border-radius: 80px;
+    border: 2px solid rgb(2, 127, 243);
+    background-color: #dbd6d6;
+    color: rgb(29, 28, 28);
+
 }
 
 .menu-bar-icon {
@@ -173,7 +184,7 @@ li h4 {
 }
 
 .menu-bar-list li.fade {
-    opacity: 1
+    opacity: 1;
 }
 
 .card-box {
@@ -219,19 +230,12 @@ li h4 {
     border-radius: 9px
 }
 
-
-
-
-
-
-
-
-
-
-
-
-.fa-arrow-up {
-    color: #2d0101;
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5 p {
+    text-align: center;
 }
 
 .card-para {
@@ -331,17 +335,30 @@ li h4 {
 }
 
 .move-btn {
-    margin: 5px 36%;
+    position: fixed;
+    right: 5px;
     font-size: 21px;
     font-weight: 600;
+    padding-top: 5px;
     text-align: center;
-    width: 100px;
+    width: 40px;
+    height: 40px;
     border: none;
-    height: 43px;
-    border-radius: 9px;
+    border: 2px solid rgb(255, 230, 0);
+    border-radius: 50px;
     color: #bdbdbd;
     background-color: #d66002;
 }
+
+.up {
+    bottom: 68px;
+}
+
+.down {
+    bottom: 10px;
+}
+
+
 
 .footer {
     background-color: #1e2022;
@@ -403,145 +420,163 @@ li h4 {
 }
 
 
+@media (prefers-color-scheme: dark) {
+    nav {
+        background-color: #0e0e1d;
+    }
 
+    .logo ion-icon {
+        color: #bdbdbd;
+    }
 
-nav {
-    background-color: #0e0e1d;
+    .com-name {
+        color: #466ada;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        background-color: #bdbdbd;
+    }
+
+    .card-head {
+        background-color: #161625;
+        color: #bdbdbd;
+    }
+
+    .card-head h2 {
+        color: #fe0739;
+    }
+
+    .card-2 {
+        background-color: #289645;
+    }
+
+    .medical {
+        padding-top: 15px;
+        background-color: #161625;
+        color: #bdbdbd;
+    }
+
+    .state-style {
+        background-color: #1e1e30;
+        color: #f8bc08;
+        box-shadow: none;
+    }
+
+    .state-wise {
+        padding-bottom: 15px;
+
+        background-color: #161625;
+    }
+
+    .info-box {
+        background-color: #161625;
+    }
+
+    .info-box p {
+        color: #bdbdbd;
+    }
+
+    .card-box {
+        background-color: #161625;
+    }
+
+    .state-wise-head h3 {
+        padding: 15px;
+        background-color: #161625;
+        color: #57677b;
+    }
+
+    .footer {
+        background-color: #0e0e1d;
+    }
+
+    .menu-bar-option {
+        background-color: #161625;
+    }
+
+    .state-style:nth-child(1) {
+        margin: 0px auto 15px;
+    }
+
+    .state-style:nth-last-child(1) {
+        margin: 15px auto 0px;
+    }
+
 }
 
-.logo ion-icon {
-    color: #bdbdbd;
-}
-
-.com-name {
-    color: #466ada;
-}
-
-.bar1,
-.bar2,
-.bar3 {
-    background-color: #bdbdbd;
-}
-
-.card-head {
-    background-color: #161625;
-    color: #bdbdbd;
-}
-
-.card-head h2 {
-    color: #fe0739;
-}
-
-.card-2 {
-    background-color: #289645;
-}
-
-.medical {
-    padding-top: 15px;
-    background-color: #161625;
-    color: #bdbdbd;
-}
-
-.state-style {
-    background-color: #1e1e30;
-    color: #f8bc08;
-    box-shadow: none;
-}
-
-.state-wise {
-    padding-bottom: 15px;
-
-    background-color: #161625;
-}
-
-.info-box {
-    background-color: #161625;
-}
-
-.info-box p {
-    color: #bdbdbd;
-}
-
-.card-box {
-    background-color: #161625;
-}
-
-.state-wise-head h3 {
-    padding: 15px;
-    background-color: #161625;
-    color: #57677b;
-}
-
-.footer {
-    background-color: #0e0e1d;
-}
-
-.menu-bar-option {
-    background-color: #161625;
-}
-
-.state-style:nth-child(1) {
-    margin: 0px auto 15px;
-}
-
-.state-style:nth-last-child(1) {
-    margin: 15px auto 0px;
-}
 
 
 /* } */
 
 @media screen and (min-width:768px) {
 
-.card-head img{
-    width: 300px;
-}
-.card-head{
-    height: 500px;
-}
-.card-head h2{
-    font-size: 30px;
-}
-.card-head p{
-    font-size: 20px;
-}
-.card-head h5, .card-head h4{
-    font-size: 21px;
-}
-.state-wise{
-    display: flex;
-    flex-wrap: wrap;
-}
-.state-style{
-    width: 350px;
-}
-.state-style:nth-child(1) {
-    margin: 15px auto;
-}
-.state-style h2{
-    font-size: 23px;
-}
-.state-style p{
-    font-size: 20px;
-}
-.medical ul li{
-    font-size: 21px;
-}
-.move-btn{
-    margin: 5px 44%;
-}
-.info-box img{
-    width: 71%;
-}
-.medical img {
-    margin: 36px 111px;
-    width: 71%;
-}
+    .card-head img {
+        width: 300px;
+    }
 
+    .card-head {
+        height: 500px;
+    }
+
+    .card-head h2 {
+        font-size: 30px;
+    }
+
+    .card-head p {
+        font-size: 20px;
+    }
+
+    .card-head h5,
+    .card-head h4 {
+        font-size: 21px;
+    }
+
+    .state-wise {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .state-style {
+        width: 350px;
+    }
+
+    .state-style:nth-child(1) {
+        margin: 15px auto;
+    }
+
+    .state-style h2 {
+        font-size: 23px;
+    }
+
+    .state-style p {
+        font-size: 20px;
+    }
+
+    .medical ul li {
+        font-size: 21px;
+    }
+
+    .move-btn {
+        margin: 5px 44%;
+    }
+
+    .info-box img {
+        width: 71%;
+    }
+
+    .medical img {
+        margin: 36px 111px;
+        width: 71%;
+    }
+    .up , .down{
+        visibility: hidden;
+            }
 }
 
 
 
 @media screen and (min-width:1024px) {
-    
+   
 }
