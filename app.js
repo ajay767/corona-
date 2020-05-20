@@ -31,7 +31,7 @@ var tracker = (function () {
             document.querySelector('.card-2 span').innerHTML = ('+' + increasedDeath);
 
             var increasedRecovery = statedata[0].recovered - pastDataUpdate.totalrecovered;
-            document.querySelector('.card-3 span').innerHTML = ('+' + increasedRecovery);
+            document.querySelector('.card-3 span').innerHTML = (`+ ${increasedRecovery}`);
 
             document.querySelector('.card-1 p').innerHTML = parseInt(statedata[0].confirmed);
             document.querySelector('.card-2 p').innerHTML = parseInt(statedata[0].deaths);
@@ -41,10 +41,21 @@ var tracker = (function () {
             document.querySelector('.card-5 p').innerHTML = parseInt(statedata[0].active);
             for (var i = 1; i < statedata.length; i++) {
                 var current = statedata[i];
-                document.querySelector('.' + current.statecode + ' h2').innerHTML = current.state;
-                document.querySelector('.' + current.statecode + ' p .TC').innerHTML = current.confirmed;
-                document.querySelector('.' + current.statecode + ' p .TD').innerHTML = current.deaths;
-                document.querySelector('.' + current.statecode + ' p .RC').innerHTML = current.recovered;
+                var newHtml;
+                console.log( current.state);
+                console.log(current.statecode);
+
+
+           html = `<div class="%SC% state-style" id=><h2>%stateName%</h2><p>Total Case: <span class=TC>%totalCase%</span> <br> Total Death: <span class=TD>%totalDeath%</span><br> Recovered:<class=RC>%totalRecovered%</span></p></div>`;
+           
+                newHtml = html.replace('%SC%',current.statecode);
+                newHtml = newHtml.replace('%stateName%', current.state);
+                newHtml = newHtml.replace('%totalCase%', current.confirmed);
+                newHtml = newHtml.replace('%totalDeath%', current.deaths);
+                newHtml = newHtml.replace('%totalRecovered%', current.recovered);
+
+                document.querySelector('.state-wise').insertAdjacentHTML('beforeend', newHtml);
+
             }
         });
 })();
